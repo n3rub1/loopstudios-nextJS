@@ -8,6 +8,7 @@
 .top-part {
   background-image: url("../public/image-hero.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   height: 50vh;
 }
@@ -56,11 +57,9 @@
 .leader-div {
   position: relative;
   padding: 10rem;
-  margin-top: 5rem;
-  /* border: 1px solid black; */
   max-width: 25rem;
   height: 10rem;
-  margin: 10rem auto;
+  margin: 5rem auto 0 auto;
 }
 
 .leader-information {
@@ -90,4 +89,90 @@
 .leader-paragraph {
   color: gray;
   font-size: small;
+}
+
+.creation-top {
+  display: flex;
+  /* border: 1px solid black; */
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 50%;
+  padding-bottom: 2em;
+}
+
+.ourCreations {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.seeAll {
+  border: 1px black solid;
+  padding: 1rem;
+  font-size: small;
+}
+
+.projects-top {
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  grid-template-columns: repeat(4, 0.3fr);
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.projects-top p {
+  position: absolute;
+  color: white;
+  bottom: 2rem;
+  padding: 0 0 0.5rem 1rem;
+}
+
+.earthImage {
+  position: relative;
+  cursor: pointer;
+}
+
+
+.arcadeImage {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.soccerImage {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.carImage {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.roadImage {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.borealisImage {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.curiosityImage {
+  position: relative;
+  cursor: pointer;
+
+}
+
+.fisheyeImage {
+  position: relative;
+  cursor: pointer;
+
 }
