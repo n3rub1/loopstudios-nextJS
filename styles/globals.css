@@ -110,6 +110,13 @@
   border: 1px black solid;
   padding: 1rem;
   font-size: small;
+  cursor: pointer;
+}
+
+.seeAll:hover {
+font-weight: bold;
+background-color: rgb(150, 65, 230);
+color: white;
 }
 
 .projects-top {
@@ -122,57 +129,41 @@
   row-gap: 1em;
 }
 
-.projects-top p {
+.ImagePara {
   position: absolute;
   color: white;
   bottom: 2rem;
   padding: 0 0 0.5rem 1rem;
+  z-index: 2;
 }
 
-.earthImage {
+.ImageDiv{
   position: relative;
   cursor: pointer;
+  z-index: 1;
 }
 
-
-.arcadeImage {
-  position: relative;
-  cursor: pointer;
-
+.coloumnImage:hover{
+  opacity: 0.5;
 }
 
-.soccerImage {
-  position: relative;
-  cursor: pointer;
-
+.footer{
+  background-color: black;
+  color: white;
 }
 
-.carImage {
-  position: relative;
-  cursor: pointer;
-
+.top-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.roadImage {
-  position: relative;
-  cursor: pointer;
-
+.images-footer{
+  display: flex;
+  padding-left: 1rem;
+  padding:3rem;
 }
 
-.borealisImage {
-  position: relative;
-  cursor: pointer;
-
-}
-
-.curiosityImage {
-  position: relative;
-  cursor: pointer;
-
-}
-
-.fisheyeImage {
-  position: relative;
-  cursor: pointer;
-
+.companyName-footer{
+  padding-left: 5rem;
 }
