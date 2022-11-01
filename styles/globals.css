@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 50vh;
+  height: 500px;
 }
 
 .top-nav {
@@ -27,9 +27,13 @@
 }
 
 .top-nav-list a {
-
   text-decoration: none;
   color: white;
+}
+
+.top-nav-list a:hover{
+  text-decoration: underline solid white 1px;
+  font-weight: bold;
 }
 
 .side-nav {
@@ -127,6 +131,7 @@ color: white;
   grid-template-columns: repeat(4, 0.3fr);
   column-gap: 1em;
   row-gap: 1em;
+  padding-bottom: 3rem;
 }
 
 .ImagePara {
@@ -156,14 +161,43 @@ color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.images-footer{
-  display: flex;
-  padding-left: 1rem;
-  padding:3rem;
+  padding: 1rem
 }
 
 .companyName-footer{
-  padding-left: 5rem;
+  padding: 1rem;
+  padding-left: 2.5rem
+}
+
+.images-footer{
+
+}
+
+.footer-image{
+  cursor: pointer;
+}
+
+.bottom-footer{
+  display: flex;
+  justify-content: space-between;
+  padding:1rem;
+}
+
+.side-nav-footer a{
+  text-decoration: none;
+  color: white;
+  padding-right: 1rem
+}
+
+.side-nav-footer a:hover{
+  text-decoration: underline solid white 1px;
+  font-weight: bold;
+}
+
+.side-nav-footer{
+  list-style-type: none;
+}
+
+.navbar-footer{
+  display: flex;
 }
