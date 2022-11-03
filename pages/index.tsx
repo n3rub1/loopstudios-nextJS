@@ -1,5 +1,4 @@
 import Image from "next/image";
-import vr from "../public/image-interactive.jpg";
 import earth from "../public/image-deep-earth.jpg";
 import arcade from "../public/image-night-arcade.jpg";
 import soccer from "../public/image-soccer-team.jpg";
@@ -12,58 +11,16 @@ import facebook from "../public/icon-facebook.svg";
 import twitter from "../public/icon-twitter.svg";
 import pinterest from "../public/icon-pinterest.svg";
 import instagram from "../public/icon-instagram.svg";
+import { TopNav } from "./components/topnav";
+import { MiddleHero } from "./components/middleHero";
 
 function Start() {
 
   return (
-    <div>
-      <header className="top-part">
-        <nav className="top-nav">
-          <ul className="top-nav-list">
-            <li className="companyName">
-              <a href="#">loopstudios</a>
-            </li>
-          </ul>
-          <ul className="top-nav-list">
-            <li className="side-nav">
-              <a href="about">About</a>
-            </li>
-            <li className="side-nav">
-              <a href="news">Careers</a>
-            </li>
-            <li className="side-nav">
-              <a href="events">Events</a>
-            </li>
-            <li className="side-nav">
-              <a href="products">Products</a>
-            </li>
-            <li className="side-nav">
-              <a href="support">Support</a>
-            </li>
-          </ul>
-        </nav>
-        <h1 className="hero-text">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
-      </header>
 
-      <section className="leader-div">
-        <div className="vrGuyImage">
-          <Image
-            src={vr}
-            alt="A person in VR"
-            width="600px"
-            height="400px"
-          ></Image>
-        </div>
-        <div className="leader-information">
-          <h2 className="leader-header">THE LEADER IN INTERACTIVE VR</h2>
-          <p className="leader-paragraph">
-            Founded in 2011, Loopstudios has been producting world-class virtual
-            reality projects for some of the best companies around the globe.
-            Our award-winning creation gave transformed buisnesses through
-            digital experiences that bind to their brand.
-          </p>
-        </div>
-      </section>
+    <div>
+      <TopNav></TopNav>
+      <MiddleHero></MiddleHero>
 
       <section>
         <div className="creation-top">
