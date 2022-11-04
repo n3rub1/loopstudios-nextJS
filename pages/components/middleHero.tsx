@@ -1,4 +1,3 @@
-import React from "react"
 import vr from "../../public/image-interactive.jpg";
 import Image from "next/image";
 

@@ -1,4 +1,13 @@
+import React from "react";
+import Image from "next/image";
+import { Menu } from "../components/Menu";
+import burger from "../../public/icon-hamburger.svg";
+
+
 export function TopNav() {
+
+    const [burgerClicked, setBurgerClicked] = React.useState(false);
+
     return (
         <header className="top-part">
             <nav className="top-nav">
@@ -7,6 +16,8 @@ export function TopNav() {
                         <a href="#">loopstudios</a>
                     </li>
                 </ul>
+                {burgerClicked && <Menu></Menu>}
+                {!burgerClicked && <Image src={burger} className="burger" alt="burger"></Image>}
                 <ul className="top-nav-list">
                     <li className="side-nav">
                         <a href="about">About</a>
