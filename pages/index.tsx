@@ -1,7 +1,8 @@
 import { TopNav } from "./components/topnav";
 import { MiddleHero } from "./components/middleHero";
 import { HeaderButton } from "./components/HeaderButton";
-import { GridImages } from "./components/GridImages";
+import { GridImagesDesktop } from "./components/GridImagesDesktop";
+import { GridImagesMobile } from "./components/GridImagesMobile";
 import { Footer } from "./components/Footer";
 
 function Start() {
@@ -16,7 +17,12 @@ function Start() {
         buttonText="SEE ALL"
       ></HeaderButton>
 
-      <GridImages></GridImages>
+      <div className="desktopImages">
+        <GridImagesDesktop></GridImagesDesktop>
+      </div>
+      <div className="mobileImages">
+        <GridImagesMobile></GridImagesMobile>
+      </div>
       <Footer></Footer>
     </div>
   );

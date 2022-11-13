@@ -1,14 +1,14 @@
 import close from "../../public/icon-close.svg";
 import Image from "next/image";
 
-export function Menu(props:any) {
+export function Menu(props: any) {
 
-console.log(props)
+    console.log(props)
 
     return (
         <section className="menu-mobile">
             <div className="top-menu-mobile">
-                <Image onClick={()=>{props.stateChange(false)}} src={close} alt="close"></Image>
+                <Image onClick={() => { props.stateChange(false) }} src={close} alt="close"></Image>
             </div>
             <div className="bottom-menu-mobile">
                 <ul className="menu-items-mobile">

@@ -95,11 +95,10 @@
 
 .creation-top {
   display: flex;
-  /* border: 1px solid black; */
   align-items: center;
   margin: 0 auto;
   justify-content: space-between;
-  width: 50%;
+  width: 60vw;
   padding-bottom: 2em;
 }
 
@@ -127,7 +126,7 @@
 
 .projects-top {
   display: grid;
-  width: 50%;
+  width: 60vw;
   margin: 0 auto;
   justify-content: center;
   grid-template-columns: repeat(4, 0.3fr);
@@ -232,23 +231,23 @@
 }
 
 .facebook:hover {
-  filter: brightness(0) saturate(100%) invert(34%) sepia(10%) saturate(3018%)
-    hue-rotate(183deg) brightness(93%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(34%) sepia(10%) saturate(3018%) hue-rotate(183deg) brightness(93%) contrast(92%);
 }
 
 .twitter:hover {
-  filter: brightness(0) saturate(100%) invert(60%) sepia(65%) saturate(6190%)
-    hue-rotate(169deg) brightness(107%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(60%) sepia(65%) saturate(6190%) hue-rotate(169deg) brightness(107%) contrast(101%);
 }
 
 .pinterest:hover {
-  filter: brightness(0) saturate(100%) invert(16%) sepia(82%) saturate(7421%)
-    hue-rotate(345deg) brightness(87%) contrast(110%);
+  filter: brightness(0) saturate(100%) invert(16%) sepia(82%) saturate(7421%) hue-rotate(345deg) brightness(87%) contrast(110%);
 }
 
 .instagram:hover {
-  filter: brightness(0) saturate(100%) invert(27%) sepia(24%) saturate(5706%)
-    hue-rotate(294deg) brightness(89%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(27%) sepia(24%) saturate(5706%) hue-rotate(294deg) brightness(89%) contrast(95%);
+}
+
+.mobileImages {
+  display: none;
 }
 
 @media only screen and (max-width: 750px) {
@@ -318,7 +317,9 @@
     padding: 1rem;
     font-size: small;
     cursor: pointer;
+    margin-top: 1em
   }
+
   .seeAll-mobile:hover {
     font-weight: bold;
     background-color: rgb(150, 65, 230);
@@ -330,8 +331,34 @@
     grid-template-columns: repeat(1, 0.3fr);
   }
 
-  .ImageDiv{
+  .desktopImages {
     display: none;
-    border: 2px solid pink;
+  }
+
+  .mobileImages {
+    display: block;
+    margin: 0 auto;
+    width: 70vw;
+    padding: 1em;
+  }
+
+  .ImageDivMobile {
+    position: relative;
+  }
+
+  .ImageParaMobile {
+    position: absolute;
+    color: white;
+    bottom: 0.5em;
+    padding: 0.5em;
+    font-size: 100%;
+  }
+
+  .ImageDivMobile {
+    padding-top: 1em;
+  }
+
+  .ourCreations {
+    margin: 0 auto;
   }
 }
